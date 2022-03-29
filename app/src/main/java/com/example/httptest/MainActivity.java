@@ -17,17 +17,15 @@ public class MainActivity extends AppCompatActivity {
 
     ApiInterface api;
 
-    // ui
+    // UI
     Button btnGet;
     Button btnPost;
     TextView txtResult;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         btnGet = (Button)findViewById( R.id.btnGet );
         btnGet.setOnClickListener( this::onClick);
